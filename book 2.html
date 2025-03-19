@@ -4,120 +4,189 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-  <style type="text/css">
-
-
-.summary{
-      background-color: white;
-      height: 120vh;
-      width: 50%;
-      margin: 5vh;
-      margin-left: 25%;
-      border-radius: 4%;
-      padding: 4vh 2vw;
+  <title>Book 1 Details</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      text-align: center;
     }
 
+    /* Container */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Header */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    .link a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      padding: 10px;
+      display: inline-block;
+    }
+
+    /* Book Details Section */
+    .summary {
+      background-color: white;
+      width: 50%;
+      margin: 5vh auto;
+      border-radius: 8px;
+      padding: 4vh 2vw;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Image Container */
     .img-container {
-      height: 10vh;
-      width: 100%;
-      max-height: 100%;
-      margin-top: 2vh;
-      margin-bottom: 38vh;
+      text-align: center;
+      margin-bottom: 20px;
     }
 
     .img-container img {
-      width: 30%;
-      height: auto;
-      border-radius: 8%; 
+      width: 80%;
+      max-width: 250px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
 
+    /* Details Section */
+    details {
+      background: #f8f8f8;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Purchase Links */
+    .purchase-links ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .purchase-links li {
+      margin: 10px 0;
+    }
+
+    .purchase-links a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    .purchase-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #222;
+      color: white;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .summary {
+        width: 80%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 18px;
+      }
+
+      .summary {
+        width: 95%;
+      }
+
+      .img-container img {
+        width: 90%;
+      }
+    }
   </style>
-
 </head>
-
-
 <body>
 
-
   <div class="container">
-
     
-    <!-- The main heading of the page -->
-     
+    <!-- Header Section -->
     <header>
-      <h1>Book Showcase: Book: 1 Details</h1>
-      
+      <h1>Book Showcase: Book 1 Details</h1>
       <div class="link">
         <a href="index.html">Home</a>
       </div>
     </header>
 
-      <!-- details of the page  -->
-
+    <!-- Book Details -->
     <main>
       <div class="summary">
-
-       <div class="heading">
-        <span style="font-weight: 600; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Book 1: Exploring Technology</span>
-
-        <div class="img-container">
-          <img src="images/book2.png" alt="">
+        
+        <div class="heading">
+          <h2>Book 2: One-Piece </h2>
+          <div class="img-container">
+            <img src="images/book2.png" alt="Book Cover">
+          </div>
         </div>
-       </div>
 
-        <div>
-          <details>
-            <summary>Genre</summary>
-            <ul>
-              <li>Technology</li>
-              <li>Education</li>
-            </ul>
-          </details>
-
-          <details>
-            <summary>Index Page</summary>
+        <details>
+          <summary>Genre</summary>
           <ul>
-            <li>Introduction</li>
-            <li>Chapter 1: Overview</li>
-            <li>Chapter 2: Advanced Concepts</li>
+            <li>adventure</li>
+            <li> fantasy</li>
+            <li> Pirate</li>
           </ul>
-          </details>
+        </details>
+          
+        <details>
+          <summary>Authors</summary>
+          <p>
+            Eiichiro Oda
+          </p>
+        </details>
 
-          <details>
-            <summary>Authors</summary>
-            Jane Doe, Jhon Smith
-          </details>
+        <details>
+          <summary>Overview</summary>
+          <p>One Piece is a Japanese manga series written and illustrated by Eiichiro Oda. It follows the adventures of Monkey D. Luffy, a young man who can stretch his body like rubber after unintentionally eating the Gum-Gum Fruit, and his crew, the Straw Hat Pirates, as they sail through the Grand Line in search of the mythical treasure known as the "One Piece" to become the next King of the Pirates.</p>
+        </details>
 
-          <details>
-            <summary>Overview</summary>
-            This book provides detail insights into technology and communication skills for professionals and students
-          </details>
-
-          <details>
-            <summary>Competative Exam Relavence</summary>
-            Highly recommended fot IT and communication-related government exams.
-          </details>
-
-          <details>
-            <summary>Purchase Links</summary>
-            <ul>
-              <li><a href="https://www.amazon.com/One-Piece-East-Blue-1-2-3/dp/1421536250?sr=8-7">Amazon</a></li>
-              <li><a href="https://www.flipkart.com/one-piece-omnibus-edition-vol-1-volume-1/p/itm7168e586ef61b?pid=9781421536255&lid=LSTBOK97814215362550PUTCG&marketplace=FLIPKART&q=one+piece+manga&store=bks&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=600a518e-acd2-4081-a413-1ed2b479e1f3.9781421536255.SEARCH&ppt=sp&ppn=sp&ssid=4ng009answ0000001742308289269&qH=853ce3e49d4db980">Flipkart</a></li>
-            </ul>
-          </details>
-
-        </div>
+        <details class="purchase-links">
+          <summary>Purchase Links</summary>
+          <ul>
+            <li><a href="https://www.amazon.com/One-Piece-East-Blue-1-2-3/dp/1421536250?sr=8-7">Amazon</a></li>
+            <li><a href="https://www.flipkart.com/one-piece-omnibus-edition-vol-1-volume-1/p/itm7168e586ef61b?pid=9781421536255">Flipkart</a></li>
+          </ul>
+        </details>
 
       </div>
     </main>
-    
-    <!-- Footer of the page  -->
-    
+
+    <!-- Footer -->
     <footer>
-      <span>@ 2025 Book Showcase | All rights reserved</span>
+      <span>&copy; 2025 Book Showcase | All rights reserved</span>
     </footer>
-    
     
   </div>
 </body>

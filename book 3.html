@@ -8,30 +8,126 @@
   <style type="text/css">
 
 
-.summary{
-      background-color: white;
-      height: 120vh;
-      width: 50%;
-      margin: 5vh;
-      margin-left: 25%;
-      border-radius: 4%;
-      padding: 4vh 2vw;
+/* General Styles */
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      text-align: center;
     }
 
+    /* Container */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Header */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    .link a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      padding: 10px;
+      display: inline-block;
+    }
+
+    /* Book Details Section */
+    .summary {
+      background-color: white;
+      width: 50%;
+      margin: 5vh auto;
+      border-radius: 8px;
+      padding: 4vh 2vw;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Image Container */
     .img-container {
-      height: 10vh;
-      width: 100%;
-      max-height: 100%;
-      margin-top: 2vh;
-      margin-bottom: 38vh;
+      text-align: center;
+      margin-bottom: 20px;
     }
 
     .img-container img {
-      width: 30%;
-      height: auto;
-      border-radius: 8%; 
+      width: 80%;
+      max-width: 250px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
 
+    /* Details Section */
+    details {
+      background: #f8f8f8;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Purchase Links */
+    .purchase-links ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .purchase-links li {
+      margin: 10px 0;
+    }
+
+    .purchase-links a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    .purchase-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #222;
+      color: white;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .summary {
+        width: 80%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 18px;
+      }
+
+      .summary {
+        width: 95%;
+      }
+
+      .img-container img {
+        width: 90%;
+      }
+    }
   </style>
 
 </head>
@@ -70,33 +166,20 @@
           <details>
             <summary>Genre</summary>
             <ul>
-              <li>Technology</li>
-              <li>Education</li>
+              <li>adventure</li>
+              <li>martial arts</li>
+              <li>supernatural</li>
             </ul>
           </details>
 
           <details>
-            <summary>Index Page</summary>
-          <ul>
-            <li>Introduction</li>
-            <li>Chapter 1: Overview</li>
-            <li>Chapter 2: Advanced Concepts</li>
-          </ul>
-          </details>
-
-          <details>
             <summary>Authors</summary>
-            Jane Doe, Jhon Smith
+            Tite Kubo
           </details>
 
           <details>
             <summary>Overview</summary>
-            This book provides detail insights into technology and communication skills for professionals and students
-          </details>
-
-          <details>
-            <summary>Competative Exam Relavence</summary>
-            Highly recommended fot IT and communication-related government exams.
+            Bleach is a Japanese anime television series based on Tite Kubo's manga of the same name. The series follows Ichigo Kurosaki, a high school student in Karakura Town who can see ghosts. After gaining the powers of a Soul Reaper from Rukia Kuchiki, Ichigo becomes responsible for protecting humans from evil spirits and guiding departed souls to the afterlife.
           </details>
 
           <details>
