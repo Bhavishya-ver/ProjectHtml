@@ -211,9 +211,12 @@ footer{
 @media (max-width: 768px) {
   .images-container {
     flex-direction: column;
+    gap: 20px;
     align-items: center;
   
   }
+  
+  
   
   .card {
     width: 80%;
