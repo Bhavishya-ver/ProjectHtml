@@ -43,6 +43,7 @@ html,body{
   animation: color 12s ease-in-out infinite;
   display: flex;
   flex-direction: column;
+  
 }
 
 
@@ -210,8 +211,9 @@ footer{
   .images-container {
     flex-direction: column;
     align-items: center;
+  
   }
-
+  
   .card {
     width: 80%;
   }
